@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142c32">
+  <meta name="description" content="MATHCOUNTS Weeks 1 and 2: number theory and algebra explorers, lessons, guided practice, and mixed assessments.">
+  <title>MATHCOUNTS Lab · Weeks 1 + 2</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/algebra.css">
+  <link rel="stylesheet" href="/combined.css">
+  <script src="/storage.js" defer></script>
+  <script src="/assessment.js" defer></script>
+  <script src="/lessons.js" defer></script>
+  <script src="/app.js" defer></script>
+  <script src="/explorer-ui.js" defer></script>
+  <script src="/navigation.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to activity</a>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview"><span class="brand-symbol">∑</span><span>MATHCOUNTS<br>Lab<span class="brand-sub">WEEKS 1 + 2</span></span></a>
+      <label class="mobile-activities" for="activity-select">Activity
+        <select id="activity-select">
+          <option value="overview">Start here · Both weeks</option>
+          <optgroup label="Week 1 · Number theory">
+            <option value="remainder">Remainders</option>
+            <option value="classes">Congruence classes</option>
+            <option value="clock">Modular clock</option>
+            <option value="powers">Power cycles</option>
+            <option value="congruence">Solve a congruence</option>
+          </optgroup>
+          <optgroup label="Week 2 · Algebra">
+            <option value="algebra-overview">Algebra lesson plan</option>
+            <option value="foundations">Algebra foundations</option>
+            <option value="systems">Systems of equations</option>
+            <option value="quadratics">Quadratics</option>
+            <option value="identities">Algebraic identities</option>
+          </optgroup>
+          <option value="practice">Contest practice · Both weeks</option>
+        </select>
+      </label>
+      <nav aria-label="Activities">
+        <button data-tab="overview" class="active" aria-current="page"><span>↗</span>Start here</button>
+        <div class="nav-group">WEEK 1 · NUMBER THEORY</div>
+        <button data-tab="remainder"><span>01</span>Remainders</button>
+        <button data-tab="classes"><span>02</span>Congruence classes</button>
+        <button data-tab="clock"><span>03</span>Modular clock</button>
+        <button data-tab="powers"><span>04</span>Power cycles</button>
+        <button data-tab="congruence"><span>05</span>Solve a congruence</button>
+        <div class="nav-group">WEEK 2 · ALGEBRA</div>
+        <button data-tab="algebra-overview"><span>↗</span>Algebra lesson plan</button>
+        <button data-tab="foundations"><span>01</span>Algebra foundations</button>
+        <button data-tab="systems"><span>02</span>Systems of equations</button>
+        <button data-tab="quadratics"><span>03</span>Quadratics</button>
+        <button data-tab="identities"><span>04</span>Algebraic identities</button>
+        <div class="nav-group">PRACTICE BOTH WEEKS</div>
+        <button data-tab="practice"><span>✓</span>Contest practice</button>
+      </nav>
+      <div class="local-note"><span class="status-dot"></span>Runs locally · works offline</div>
+    </aside>
+    <main id="workspace" tabindex="-1">
+      <header class="topbar"><span>Explore → solve → explain</span><span class="pill" id="week-pill">WEEKS 1 + 2</span></header>
+      <div id="activity"></div>
+      <footer>Look for structure. Explain your shortcut. Check your answer.<span>Original practice problems · not an official MATHCOUNTS product.</span></footer>
+    </main>
+  </div>
+  <noscript>Enable JavaScript and run python3 mathcounts.py to use this trainer.</noscript>
+</body>
+</html>
