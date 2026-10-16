@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "python3 scripts/build_static.py || python scripts/build_static.py",
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/api/:endpoint", "destination": "/api?endpoint=:endpoint" }
+  ],
+  "functions": {
+    "api/index.py": {
+      "excludeFiles": "{public/**,week 1/**,week 2/**,**/test_*.py,**/__pycache__/**,**/*.jpg,**/*.zip}"
+    }
+  }
+}
